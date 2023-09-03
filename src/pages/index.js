@@ -6,6 +6,8 @@ import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
+import LightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
+import TransitionEffect from "@/components/TransitionEffect";
 
 export default function Home() {
   return (
@@ -14,6 +16,7 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen">
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full ">
@@ -56,6 +59,10 @@ export default function Home() {
         </Layout>
 
         <HireMe />
+
+        <div className="absolute right-8 bottom-8 inline-block w-24">
+          <Image src={LightBulb} alt="profile-pic" className="w-full h-auto" />
+        </div>
       </main>
     </>
   );

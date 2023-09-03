@@ -23,7 +23,7 @@ const Footer = () => {
           target={"_blank"}
           className="underline underline-offset-2"
         >
-          Raja
+          Say Hi!
         </Link>
       </Layout>
     </footer>
