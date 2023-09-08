@@ -42,7 +42,7 @@ const Navbar = () => {
 
       <nav className="flex items-center justify-center flex-wrap">
         <motion.a
-          href="https://github.com/Raja543"
+          href="https://twitter.com/rajakumar952"
           target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
@@ -60,7 +60,7 @@ const Navbar = () => {
           <GithubIcon />
         </motion.a>
         <motion.a
-          href="https://github.com/Raja543"
+          href="https://www.linkedin.com/in/raja-kumar-857a44247/"
           target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}

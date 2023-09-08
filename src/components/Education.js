@@ -49,10 +49,16 @@ const Education = () => {
             info="Relevant courses included Operating Systems, Computer Networks, Database Management Systems, Programming Languages, and Data Structures and Algorithms."
           />
           <Details
-            type="Bachelor Of Computer Application"
-            time="Nov 2023 - May 2023"
-            place="Galgotias University"
-            info="Relevant courses included Operating Systems, Computer Networks, Database Management Systems, Programming Languages, and Data Structures and Algorithms."
+            type="Class 12th"
+            time="April 2019 - March 2020"
+            place="A A M Children's Academy"
+            info="Relevant courses included Physics, Chemistry, Mathematics, and Computer Science."
+          />
+          <Details
+            type="Class 10th"
+            time="April 2017 - March 2018"
+            place="A A M Children's Academy"
+            info="Relevant courses included Science, Mathematics, English , Hindi and Computer Science."
           />
         </ul>
       </div>
