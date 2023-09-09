@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <TransitionEffect />
-      <main className="flex items-center text-dark w-full min-h-screen">
+      <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full ">
             <div className="w-1/2">
@@ -43,13 +43,14 @@ export default function Home() {
                   href="/Raja's Resume.pdf"
                   // download={true}
                   target={"_blank"}
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid 
+                  border-transparent hover:border-dark dark:text-dark dark:bg-light hover:dark:bg-dark hover:dark:text-light hover:dark:border-light "
                 >
                   Resume <LinkArrow className={"ml-1 w-6"} />
                 </Link>
                 <Link
                   href="mailto:rajakumarmahto952@gmail.com"
-                  className="ml-4 text-lg font-medium capitalize text-dark underline underline-offset-4 "
+                  className="ml-4 text-lg font-medium capitalize text-dark underline underline-offset-4 dark:text-light"
                 >
                   Contact
                 </Link>

@@ -4,12 +4,14 @@ import Logo from "./Logo";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import {
-  FacebookIcon,
   GithubIcon,
   InstagramIcon,
   LinkedInIcon,
+  MoonIcon,
+  SunIcon,
   TwitterIcon,
 } from "./Icons";
+import useThemeSwitcher from "./hooks/useThemeSwitcher";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -17,7 +19,7 @@ const CustomLink = ({ href, title, className = "" }) => {
     <Link href={href} className={`${className} relative group`}>
       {title}
       <span
-        className={`h-[1px] inline-block w-0 bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-500 ${
+        className={`h-[1px] inline-block w-0 bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-500 dark:bg-light ${
           router.asPath === href ? "w-full" : "w-0"
         }`}
       >
@@ -28,8 +30,10 @@ const CustomLink = ({ href, title, className = "" }) => {
 };
 
 const Navbar = () => {
+  const [mode, setMode] = useThemeSwitcher();
+
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
+    <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light">
       <nav>
         <CustomLink href="/" title="Home" className="mr-4" />
         <CustomLink href="/about" title="About" className="mx-4" />
@@ -68,24 +72,18 @@ const Navbar = () => {
         >
           <LinkedInIcon />
         </motion.a>
-        <motion.a
-          href="https://github.com/Raja543"
-          target={"_blank"}
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          className="w-6 mx-3"
+        <button
+          onClick={() => setMode(mode === "light" ? "dark" : "light")}
+          className={`ml-3 flex item-center justify-center rounded-full p-1 ${
+            mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
+          }`}
         >
-          <InstagramIcon />
-        </motion.a>
-        <motion.a
-          href="https://github.com/Raja543"
-          target={"_blank"}
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          className="w-6 ml-3"
-        >
-          <FacebookIcon />
-        </motion.a>
+          {mode === "dark" ? (
+            <SunIcon className={"fill-dark"} />
+          ) : (
+            <MoonIcon className={"fill-dark"} />
+          )}
+        </button>
       </nav>
     </header>
   );
