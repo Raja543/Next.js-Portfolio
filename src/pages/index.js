@@ -18,13 +18,13 @@ export default function Home() {
       </Head>
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
-        <Layout className="pt-0 md:pt-16 sm:pt-8">
+        <Layout className="pt-0 md:pt-16 sm:pt-4">
           <div className="flex items-center justify-between w-full lg:flex-col ">
             <div className="w-1/2 md:w-full">
               <Image
                 src={profilePic}
                 alt="profile-pic"
-                className="w-full h-auto lg:hidden md:inline-block md:w-full"
+                className="w-full h-auto lg:hidden md:inline-block "
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw "
               />
@@ -34,7 +34,7 @@ export default function Home() {
                 text="Turning Vision Into Reality With Code And Design."
                 className="!text-6xl !text-left xl:text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
-              <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
+              <p className="my-4 text-base font-medium md:text-sm sm:text-xs md:text-justify">
                 As a skilled full-stack developer, I am dedicated to turning
                 ideas into innovative web applications. Explore my latest
                 projects and articles, showcasing my expertise in React.js and
