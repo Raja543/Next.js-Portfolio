@@ -5,7 +5,6 @@ import profilePic from "../../public/images/profile/developer-pic-1.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
-import HireMe from "@/components/HireMe";
 import LightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -13,18 +12,33 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Portfolio website</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="This is a portfolio Website created using Nextjs, TailwindCSS and Framer-motion"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="Portfolio Website" />
+        <meta
+          property="og:description"
+          content="This is a portfolio Website created using Nextjs, TailwindCSS and Framer-motion"
+        />
+        <meta property="og:image" content="/weblogo.png" />
+        <meta
+          property="og:url"
+          content="https://rajakumarportfolio.vercel.app/"
+        />
       </Head>
       <TransitionEffect />
-      <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
-        <Layout className="pt-0 md:pt-16 sm:pt-4">
-          <div className="flex items-center justify-between w-full lg:flex-col ">
-            <div className="w-1/2 md:w-full">
+      <main className="flex items-center text-dark w-full min-h-screen dark:text-light sm:items-start">
+        <Layout className="pt-0 md:pt-16 ">
+          <div className="flex items-start justify-between w-full md:flex-col ">
+            <div className="w-1/2 md:w-full lg:hidden md:inline-block">
               <Image
                 src={profilePic}
                 alt="profile-pic"
-                className="w-full h-auto lg:hidden md:inline-block "
+                className="w-full h-auto "
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw "
               />
@@ -61,10 +75,13 @@ export default function Home() {
           </div>
         </Layout>
 
-        <HireMe />
-
-        <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
-          <Image src={LightBulb} alt="profile-pic" className="w-full h-auto" />
+        <div className="absolute right-8 bottom-8 inline-block w-24 md:top-4 md:right-2 md:w-12">
+          <Image
+            src={LightBulb}
+            alt="profile-pic"
+            className="w-full h-auto"
+            priority
+          />
         </div>
       </main>
     </>

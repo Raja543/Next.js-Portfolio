@@ -44,11 +44,11 @@ const Experience = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "center start"],
+    offset: ["start end", "center center"],
     layoutEffect: false,
   });
   return (
-    <div className="my-32">
+    <div className="my-32 sm:my-20">
       <h2 className="font-bold text-8xl mb-12 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
         Experience
       </h2>
@@ -59,20 +59,12 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position="React Developer Intern"
+            position="React Developer "
             companyLink="https://www.findflames.com/"
             company="Find Flames"
             time="May 2023 - July 2023"
             address="New Delhi, India"
             work="I independently developed and launched the Find Flames website using technologies like ReactJS, EditorJS, and Firebase. Additionally, I collaborated with cross-functional teams on two client projects, gaining hands-on experience in agile development and honing my skills in ReactJS, TailwindCSS, EditorJS, and Firebase. This experience has equipped me with a deep understanding of web development and the ability to create user-centric digital solutions through effective project management and teamwork."
-          />
-          <Details
-            position="React Developer Intern"
-            companyLink="https://www.findflames.com/"
-            company="Find Flames"
-            time="May 2023 - July 2023"
-            address="New Delhi, India"
-            work="Developed and launched the Find Flames website independently with leveraging technologies such as ReactJS , EditorJS and Firebase. Collaborated with a team of developers on two client projects, contributing to successful outcomes and gaining hands-on experience in agile development methodologies and cross-functional teamwork. Acquired a deep understanding of web development, strengthened proficiency in ReactJS , TailwindCSS , EditorJS , Firebase and gained valuable insights into creating user-centric digital solutions through effective collaboration and project management."
           />
         </ul>
       </div>
