@@ -29,26 +29,26 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium">
-                Hi , I'm Raja Kumar, a highly detail-oriented Full Stack Web
-                Developer from New Delhi, India. My passion lies in crafting
+                Hi , I&apos;m Raja Kumar, a highly detail-oriented Full Stack
+                Web Developer from New Delhi, India. My passion lies in crafting
                 top-notch websites, and I specialize in working with HTML, CSS,
                 and JavaScript, alongside popular frameworks like Bootstrap,
                 ReactJs, TailwindCSS, Node.js, and ExpressJS.
               </p>
               <p className="font-medium my-4">
                 My expertise extends to a range of databases, including
-                Firebase, MySQL, and MongoDB. I'm a strong advocate for teamwork
-                and open communication, leveraging diverse perspectives to
-                achieve exceptional results. With solid time management skills,
-                I ensure projects are completed efficiently while maintaining
-                the highest quality standards.
+                Firebase, MySQL, and MongoDB. I&apos;m a strong advocate for
+                teamwork and open communication, leveraging diverse perspectives
+                to achieve exceptional results. With solid time management
+                skills, I ensure projects are completed efficiently while
+                maintaining the highest quality standards.
               </p>
               <p className="font-medium">
                 My problem-solving abilities and a continuous learning mindset
                 enable me to find creative solutions to complex challenges. If
-                you're seeking a skilled and dedicated Full Stack Web Developer
-                to bring your vision to life, I'd be thrilled to discuss how I
-                can contribute to your next project.
+                you&apos;re seeking a skilled and dedicated Full Stack Web
+                Developer to bring your vision to life, I&apos;d be thrilled to
+                discuss how I can contribute to your next project.
               </p>
             </div>
 
