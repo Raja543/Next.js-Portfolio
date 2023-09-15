@@ -36,20 +36,21 @@ const Skills = () => {
 
         <Skill name="HTML" x="-10vw" y="-6vw" />
         <Skill name="CSS" x="13vw" y="-2vw" />
-        <Skill name="Javascript" x="3vw" y="9vw" />
-        <Skill name="Bootstrap" x="16vw" y="-15vw" />
-        <Skill name="Tailwind CSS" x="39vw" y="9vw" />
-        <Skill name="ReactJS" x="-23vw" y="1vw" />
-        <Skill name="EditorJS" x="-15vw" y="20vw" />
-        <Skill name="NodeJS" x="14vw" y="20vw" />
-        <Skill name="ExpressJS" x="-35vw" y="-12vw" />
+        <Skill name="Javascript" x="-2vw" y="9vw" />
+        <Skill name="Bootstrap" x="-20vw" y="4vw" />
+        <Skill name="Tailwind CSS" x="15vw" y="10vw" />
+        <Skill name="ReactJS" x="10vw" y="-12vw" />
+        <Skill name="EditorJS" x="-8vw" y="17vw" />
+        <Skill name="NodeJS" x="10vw" y="-22vw" />
+        <Skill name="Postman" x="6vw" y="23vw" />
+        <Skill name="ExpressJS" x="-35vw" y="-3vw" />
         <Skill name="MongoDB" x="28vw" y="-2vw" />
-        <Skill name="MYSQL" x="-25vw" y="10vw" />
-        <Skill name="Firebase" x="25vw" y="-24vw" />
-        <Skill name="Docker" x="-15vw" y="10vw" />
-        <Skill name="AWS" x="16vw" y="10vw" />
-        <Skill name="GIT" x="-30vw" y="-20vw" />
-        <Skill name="Postman" x="-15vw" y="-12vw" />
+        <Skill name="MYSQL" x="-22vw" y="-10vw" />
+        <Skill name="Firebase" x="25vw" y="-16vw" />
+        <Skill name="Docker" x="35vw" y="6vw" />
+        <Skill name="AWS" x="26vw" y="15vw" />
+        <Skill name="GIT" x="-26vw" y="15vw" />
+       
         <Skill name="Figma" x="-15vw" y="-20vw" />
       </div>
     </>
@@ -57,3 +58,5 @@ const Skills = () => {
 };
 
 export default Skills;
+
+

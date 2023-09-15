@@ -64,7 +64,7 @@ const Experience = () => {
             company="Find Flames"
             time="May 2023 - July 2023"
             address="New Delhi, India"
-            work="I independently developed and launched the Find Flames website using technologies like ReactJS, EditorJS, and Firebase. Additionally, I collaborated with cross-functional teams on two client projects, gaining hands-on experience in agile development and honing my skills in ReactJS, TailwindCSS, EditorJS, and Firebase. This experience has equipped me with a deep understanding of web development and the ability to create user-centric digital solutions through effective project management and teamwork."
+            work="Independently developed and launched the Find Flames website using technologies like ReactJS, EditorJS, and Firebase. Additionally, Collaborated with cross-functional teams on two client projects, gaining hands-on experience in agile development and sharpening my skills in ReactJS, TailwindCSS, EditorJS, and Firebase. This experience has equipped me with a deep understanding of web development and the ability to create user-centric digital solutions through effective project management and teamwork."
           />
         </ul>
       </div>

@@ -6,7 +6,10 @@ import TransitionEffect from "@/components/TransitionEffect";
 import Link from "next/link";
 import { GithubIcon } from "@/components/Icons";
 import Image from "next/image";
-import FeaturedProjectimg1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import FeaturedProjectimg1 from "../../public/images/projects/real-estate-cover-imagepng.png";
+import FeaturedProjectimg2 from "../../public/images/projects/FileShare-web3-cover-image.png";
+import Projectimg1 from "../../public/images/projects/Travel-agency-cover-image.png";
+import Projectimg2 from "../../public/images/projects/Nextjs-portfolio-cover-image.png";
 
 const FeaturedProjects = ({ type, title, summary, img, link, github }) => {
   return (
@@ -42,7 +45,7 @@ const FeaturedProjects = ({ type, title, summary, img, link, github }) => {
             {title}
           </h2>
         </Link>
-        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
+        <p className="my-2 font-medium  text-dark dark:text-light sm:text-sm">
           {summary}
         </p>
         <div className="mt-2 flex items-center">
@@ -52,7 +55,7 @@ const FeaturedProjects = ({ type, title, summary, img, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark  sm:text-base sm:px-4"
+            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark  dark:hover:bg-transparent dark:hover:text-light dark:hover:border-2 dark:hover:border-light sm:text-base sm:px-4"
           >
             Visit Project
           </Link>
@@ -145,38 +148,46 @@ const projects = () => {
             <div className="col-span-12">
               <FeaturedProjects
                 type="Featured"
-                title="E-Commerce Website"
-                summary="This is a E-Commerce Website made using ReactJS, Redux, Firebase, Stripe, and Styled Components."
+                title="Dwelling Real Estate Website"
+                summary="This is a Real Estate Website made using ReactJS, NodeJS, Firebase, Razorpay, and TailwindCSS."
                 img={FeaturedProjectimg1}
+                link="https://securesharex-web3.vercel.app/"
+                github="https://github.com/Raja543/RealEstate"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Website Design"
+                title="Travel Website"
+                img={Projectimg1}
                 link="https://ecommerce-website-raj.netlify.app/"
                 github=" /"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Featured"
-                title="Crypto Screener Application"
-                img={FeaturedProjectimg1}
-                link="https://ecommerce-website-raj.netlify.app/"
-                github=" /"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              {" "}
-              <Project
-                type="Featured"
-                title="Crypto Screener Application"
-                img={FeaturedProjectimg1}
-                link="https://ecommerce-website-raj.netlify.app/"
-                github=" /"
+                type="Personal"
+                title="Portfolio Website"
+                img={Projectimg2}
+                link="https://rajakumarportfolio.vercel.app/"
+                github="https://github.com/Raja543/Next.js-Portfolio"
               />
             </div>
             <div className="col-span-12 ">
               <FeaturedProjects
                 type="Featured"
-                title="E-Commerce Website"
-                summary="This is a E-Commerce Website made using ReactJS, Redux, Firebase, Stripe, and Styled Components."
-                img={FeaturedProjectimg1}
+                title="SecureShareX Web3 File Storage System"
+                summary="This is a File Storage System made using ReactJS, Solidity, Web3, and IPFS."
+                img={FeaturedProjectimg2}
+                link="https://securesharex-web3.vercel.app/"
+                github="https://github.com/Raja543/File-storage-system"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Website"
+                title="Crypto Screener Application"
+                img={Projectimg1}
                 link="https://ecommerce-website-raj.netlify.app/"
                 github=" /"
               />
@@ -185,16 +196,7 @@ const projects = () => {
               <Project
                 type="Featured"
                 title="Crypto Screener Application"
-                img={FeaturedProjectimg1}
-                link="https://ecommerce-website-raj.netlify.app/"
-                github=" /"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                type="Featured"
-                title="Crypto Screener Application"
-                img={FeaturedProjectimg1}
+                img={Projectimg2}
                 link="https://ecommerce-website-raj.netlify.app/"
                 github=" /"
               />
