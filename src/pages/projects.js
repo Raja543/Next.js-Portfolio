@@ -185,19 +185,19 @@ const projects = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Website"
-                title="Crypto Screener Application"
+                type="Featured"
+                title="Travel Website"
                 img={Projectimg1}
-                link="https://ecommerce-website-raj.netlify.app/"
+                link=""
                 github=" /"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
                 type="Featured"
-                title="Crypto Screener Application"
+                title="Travel Website"
                 img={Projectimg2}
-                link="https://ecommerce-website-raj.netlify.app/"
+                link=""
                 github=" /"
               />
             </div>
